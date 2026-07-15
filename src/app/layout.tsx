@@ -4,8 +4,8 @@ import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "VINTAGE × NLE | Immersive Hospitality Experience",
-  description: "Private client experience portal and production dashboard."
+  title: "VINTAGE × NLE | Every Room Is a Headliner",
+  description: "A recording-led destination of era rooms, icon rooms, live performance, play and hospitality ritual."
 };
 
 export default function RootLayout({children}:{children:React.ReactNode}){
