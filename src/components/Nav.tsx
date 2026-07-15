@@ -1,0 +1,2 @@
+import Link from "next/link";
+export function Nav(){return <nav className="nav"><div className="shell navin"><Link className="brand" href="/">VINTAGE <span>×</span> NLE</Link><div className="links"><Link href="/full-experience">Full Experience</Link><Link href="/scope">Scope</Link><Link href="/progress">Progress</Link><Link href="/dashboard">Production Dashboard</Link></div><div className="status">PHASE 01 · ACTIVE</div></div></nav>}
