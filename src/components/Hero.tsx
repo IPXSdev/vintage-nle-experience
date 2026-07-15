@@ -8,14 +8,16 @@ import { VintageTitle } from "./VintageTitle"
 /**
  * Full-screen cinematic hero.
  *
- * Layers (back to front): atmospheric background + haze, slow disco ball,
- * sweeping reflected light flares, the sculptural VINTAGE wordmark, supporting
- * line and calls to action.
+ * Layers (back to front): atmospheric background + haze, sweeping light flares,
+ * the slow disco ball, the sculptural VINTAGE wordmark, supporting line and CTAs.
  *
- * Cursor parallax is progressive enhancement: a pointer listener writes
- * normalized `--px` / `--py` custom properties on the section, which CSS uses to
- * drift the layers. Everything works with no JS, and all motion is disabled
- * under `prefers-reduced-motion`.
+ * Cursor parallax is progressive enhancement. A `pointermove` listener records a
+ * normalized target; a continuous rAF loop eases the live value toward it and
+ * writes CSS custom properties:
+ *   --px/--py   ball-speed parallax   (lerp ~0.22)
+ *   --pxf/--pyf caustic-speed parallax (lerp ~0.30, reacts a touch faster)
+ * The disco ball's slow axial spin is pure CSS and stays independent of this.
+ * Tracking is skipped on coarse/narrow pointers and under reduced-motion.
  */
 export function Hero() {
   const ref = useRef<HTMLElement>(null)
@@ -24,24 +26,57 @@ export function Hero() {
     const el = ref.current
     if (!el) return
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return
+    // Mobile: no cursor tracking, disco keeps its autonomous motion.
+    if (window.matchMedia("(max-width: 800px), (pointer: coarse)").matches) return
 
-    let frame = 0
+    // Normalized target from pointer, and eased live values.
+    const target = { x: 0, y: 0 }
+    const ball = { x: 0, y: 0 }
+    const fast = { x: 0, y: 0 }
+    const BALL_LERP = 0.22
+    const FAST_LERP = 0.3
+
+    let raf = 0
+    let idle = 0
+
+    const tick = () => {
+      ball.x += (target.x - ball.x) * BALL_LERP
+      ball.y += (target.y - ball.y) * BALL_LERP
+      fast.x += (target.x - fast.x) * FAST_LERP
+      fast.y += (target.y - fast.y) * FAST_LERP
+
+      el.style.setProperty("--px", ball.x.toFixed(4))
+      el.style.setProperty("--py", ball.y.toFixed(4))
+      el.style.setProperty("--pxf", fast.x.toFixed(4))
+      el.style.setProperty("--pyf", fast.y.toFixed(4))
+
+      // Keep animating until settled, then park the loop to save battery.
+      const settled =
+        Math.abs(target.x - ball.x) < 0.0005 &&
+        Math.abs(target.y - ball.y) < 0.0005
+      if (settled && ++idle > 4) {
+        raf = 0
+        return
+      }
+      if (!settled) idle = 0
+      raf = requestAnimationFrame(tick)
+    }
+
+    const kick = () => {
+      if (!raf) raf = requestAnimationFrame(tick)
+    }
+
     const onMove = (e: PointerEvent) => {
-      if (frame) return
-      frame = requestAnimationFrame(() => {
-        frame = 0
-        const rect = el.getBoundingClientRect()
-        const px = (e.clientX - rect.left) / rect.width - 0.5
-        const py = (e.clientY - rect.top) / rect.height - 0.5
-        el.style.setProperty("--px", px.toFixed(3))
-        el.style.setProperty("--py", py.toFixed(3))
-      })
+      const rect = el.getBoundingClientRect()
+      target.x = (e.clientX - rect.left) / rect.width - 0.5
+      target.y = (e.clientY - rect.top) / rect.height - 0.5
+      kick()
     }
 
     window.addEventListener("pointermove", onMove, { passive: true })
     return () => {
       window.removeEventListener("pointermove", onMove)
-      if (frame) cancelAnimationFrame(frame)
+      if (raf) cancelAnimationFrame(raf)
     }
   }, [])
 
@@ -52,11 +87,10 @@ export function Hero() {
       <div className="cine-flare cine-flare-a" aria-hidden="true" />
       <div className="cine-flare cine-flare-b" aria-hidden="true" />
 
-      <div className="cine-disco-wrap" aria-hidden="true">
-        <DiscoBall />
-      </div>
-
       <div className="cine-inner">
+        <div className="cine-disco-wrap" aria-hidden="true">
+          <DiscoBall />
+        </div>
         <p className="cine-eyebrow">An immersive house of culture</p>
         <VintageTitle />
         <p className="cine-tagline text-balance">

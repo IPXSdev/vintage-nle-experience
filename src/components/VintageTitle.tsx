@@ -20,7 +20,7 @@ export function VintageTitle() {
           alt=""
           fill
           priority
-          sizes="(max-width: 800px) 92vw, 1100px"
+          sizes="(max-width: 800px) 90vw, 760px"
           style={{ objectFit: "contain" }}
         />
         {/* Moving specular light-sweep, masked to the wordmark box. */}
