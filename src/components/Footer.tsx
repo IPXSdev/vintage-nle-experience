@@ -1,1 +1,1 @@
-export function Footer(){return <footer className="footer"><div className="shell">Private concept environment · Creative direction and experience design by IPXS · Client review MVP</div></footer>}
+export function Footer(){return <footer className="footer"><div className="shell">Recording-led concept environment · Creative direction and experience design by IPXS · Client review MVP</div></footer>}
