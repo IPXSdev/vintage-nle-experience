@@ -1,6 +1,7 @@
 import Link from 'next/link'
-import { ArrowUpRight, Eye, Layers3, Radio, Sparkles, Globe2, Music2 } from 'lucide-react'
+import { ArrowUpRight } from 'lucide-react'
 import { ExperienceImage } from '@/components/ExperienceImage'
+import { experienceDoctrine, featuredExperiences, leadExperiences } from '@/lib/experience-program'
 
 export default function Home() {
   return (
@@ -8,27 +9,72 @@ export default function Home() {
       <section className="hero">
         <ExperienceImage id="home-hero" className="hero-image" priority sizes="100vw" />
         <div className="shell">
-          <div className="eyebrow">A destination hospitality world</div>
-          <h1>THE HOUSE IS THE ATTRACTION.</h1>
-          <p>A living cultural residence where every room becomes its own world of music, art, dining, performance, discovery and private ritual.</p>
+          <div className="eyebrow">VINTAGE × NLE · A house of eras, icons and rituals</div>
+          <h1>EVERY ROOM IS A HEADLINER.</h1>
+          <p>
+            Prince in the purple rain. Michael Jackson beneath a reactive floor. A wall of
+            playable consoles. Four decades of rooms. One living cultural destination.
+          </p>
           <div className="actions">
-            <Link className="btn primary" href="/full-experience">Enter the full experience <ArrowUpRight size={16} /></Link>
-            <Link className="btn" href="/scope">Review revised Phase 01 scope</Link>
+            <Link className="btn primary" href="/full-experience">
+              Explore all {leadExperiences.length} lead experiences <ArrowUpRight size={16} />
+            </Link>
+            <Link className="btn" href="/scope">Review Phase 01 scope</Link>
+          </div>
+          <div className="experience-marquee" aria-label="Lead experience preview">
+            {leadExperiences.slice(0, 9).map((experience) => (
+              <span key={experience.id}>{experience.title}</span>
+            ))}
           </div>
         </div>
       </section>
-      <section className="section">
+
+      <section className="section foundation-section">
         <div className="shell">
-          <div className="eyebrow">The fixed creative doctrine</div>
-          <h2>Not a themed restaurant. A world people travel to enter.</h2>
-          <p className="sectionintro">The digital MVP now reflects the specific experience program from discovery and gives the client one place to understand the vision, scope, progress and engineering decisions.</p>
-          <div className="grid">
-            <article className="card span4"><Sparkles /><h3>Constant Discovery</h3><p>Hidden thresholds, changing environments and unexpected reveals create reasons to return.</p></article>
-            <article className="card span4"><Music2 /><h3>Music as Architecture</h3><p>Sound, acoustics, eras and listening rituals actively shape the identity of every room.</p></article>
-            <article className="card span4"><Globe2 /><h3>International by Design</h3><p>A protected global doctrine with culturally specific art, food, sound and programming by market.</p></article>
-            <article className="card span4"><Eye /><h3>Virtual Experience</h3><p>A cinematic digital twin that grows into the interactive tour, sales tool and expansion reference.</p></article>
-            <article className="card span4"><Layers3 /><h3>Client Scope</h3><p>Clear phases, approval gates, revised fees, exclusions and the exact Phase 01 invoice structure.</p></article>
-            <article className="card span4"><Radio /><h3>Production Control</h3><p>Experience systems, dependencies, owners, decisions, risks and next actions in one command center.</p></article>
+          <div className="split-heading">
+            <div>
+              <div className="eyebrow">The recordings are the foundation</div>
+              <h2>The concepts lead. The system elevates.</h2>
+            </div>
+            <p className="sectionintro">
+              The specific rooms and activations are not examples or mood-board references.
+              They are the project’s lead experiences. Each one is preserved, then expanded
+              into a complete spatial, technical and hospitality world.
+            </p>
+          </div>
+          <div className="grid lead-preview-grid">
+            {featuredExperiences.map((experience, index) => (
+              <article className={`card lead-preview ${index < 2 ? 'span6' : 'span3'}`} key={experience.id}>
+                <div className="card-topline">
+                  <div className="num">{experience.number} · LEAD EXPERIENCE</div>
+                  <span className="pill active">Recorded</span>
+                </div>
+                <h3>{experience.title}</h3>
+                <p>{experience.recordedConcept}</p>
+                <Link className="text-link" href={`/full-experience#${experience.id}`}>
+                  See the elevated translation <ArrowUpRight size={14} />
+                </Link>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section doctrine-section">
+        <div className="shell">
+          <div className="eyebrow">The elevation layer</div>
+          <h2>One house. A system of unforgettable worlds.</h2>
+          <p className="sectionintro">
+            These principles connect the named experiences into one authored destination
+            without flattening their individual identities.
+          </p>
+          <div className="doctrine-grid">
+            {experienceDoctrine.map((principle, index) => (
+              <article className="doctrine-item" key={principle.title}>
+                <span>{String(index + 1).padStart(2, '0')}</span>
+                <div><h3>{principle.title}</h3><p>{principle.description}</p></div>
+              </article>
+            ))}
           </div>
         </div>
       </section>
