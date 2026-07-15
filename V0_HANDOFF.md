@@ -34,21 +34,43 @@ Midpoint milestone: $4,625
 Final payment: $2,775
 Optional accelerated schedule: +$4,000
 
-## Non-negotiable experience program
-The project is a destination hospitality property: part cultural institution, private members club, immersive art installation, entertainment venue, and legendary creative residence.
+## Recording-led source of truth
+The discovery recordings are the foundation. Their named concepts are not references,
+examples, or optional mood-board directions. They are the lead experiences and must remain
+visible in the guest journey, commercial scope, progress view, and production dashboard.
 
-The following concepts are mandatory and must remain visible in the guest journey, scope, and production system:
+The 14 lead experiences are:
+1. 1960s Vintage Room
+2. 1970s Room
+3. 1980s Room
+4. 1990s R&B Living Museum, including record players, memorabilia, roped displays and the sit-able plastic-wrapped vintage couch
+5. Prince Room with the Purple Rain false window
+6. Michael Jackson Room with the reactive light-up floor
+7. Lenny Kravitz–style rock-and-roll room
+8. Video Game Room with two arcade cabinets, multiple screens, a fully playable console wall and elevated tabletop games
+9. Grand Ballroom with chandelier and dance floor
+10. Outdoor drive-in movie nights with building-scale projection and in-car audio
+11. Private smoking lounge and humidor, with an optional cigar-retail layer
+12. The Bodega cultural gift shop
+13. Rooftop lounge, concerts, pop-ups, live music and small private events
+14. Era-coded menu theater, including cocktail naming, street-weight portion language and provocative service presentation
+
+## Elevation layer
+The project remains a destination hospitality property: part cultural institution, private
+members club, immersive art installation, entertainment venue, and legendary creative
+residence. The following principles connect and elevate the recorded concepts; they never
+replace a specific room with a generic category:
 1. The house itself is the attraction.
 2. Every room is its own independent world.
-3. Private salons, listening sessions, dinner parties, artist conversations, intimate performances, and invitation-only experiences.
-4. Constant discovery through hidden rooms, unexpected doors, passages, transformations, and surprise reveals.
-5. Music as architecture, not background decoration.
-6. An evolving living gallery with rotating art and installations.
-7. High-end artist residence energy rather than a conventional restaurant.
-8. Hospitality integrated with entertainment, performance, storytelling, projection, sound, and ritual.
-9. Every room intentionally triggers a distinct emotion.
-10. Photographability is a byproduct of extraordinary design, never the primary design goal.
-11. International rollout requires protected global experience standards plus culturally specific local layers.
+3. Music acts as architecture, not background decoration.
+4. Art, memorabilia and commissions form an evolving living gallery.
+5. Hidden thresholds, changing programs and surprise reveals create constant discovery.
+6. Hospitality integrates food, performance, storytelling, projection, sound and ritual.
+7. The atmosphere carries collected, high-end creative-residence energy.
+8. International rollout protects the global experience standards while localizing culture.
+
+Implementation source: `src/lib/experience-program.ts` is the canonical registry. Reuse it
+across routes so the lead experiences cannot drift or disappear during future revisions.
 
 ## Image replacement workflow
 The user will upload new reference and concept images directly into v0.
