@@ -1,10 +1,12 @@
 import Link from 'next/link'
 import { ArrowUpRight, Eye, Layers3, Radio, Sparkles, Globe2, Music2 } from 'lucide-react'
+import { ExperienceImage } from '@/components/ExperienceImage'
 
 export default function Home() {
   return (
     <main>
       <section className="hero">
+        <ExperienceImage id="home-hero" className="hero-image" priority sizes="100vw" />
         <div className="shell">
           <div className="eyebrow">A destination hospitality world</div>
           <h1>THE HOUSE IS THE ATTRACTION.</h1>
