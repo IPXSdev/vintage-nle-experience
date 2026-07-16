@@ -6,7 +6,7 @@
  * IMPORTANT: This manifest contains NO pricing, deposits, fee ranges, invoice
  * lines or commercial totals. The public scope page is editorial only.
  *
- * The /scope page renders entirely from this data — no hardcoded phase copy in
+ * The /scope page renders entirely from this data. No hardcoded phase copy in
  * the page component. Each panel is deep-linkable via its `id` (used as the
  * URL hash / anchor).
  */
@@ -40,7 +40,7 @@ export const scopePhases: ScopePhase[] = [
     title: "Experience Strategy & Creative Foundation",
     summary: "Define what the house is, who it is for, and the feeling it exists to create.",
     purpose:
-      "Establish the intellectual and emotional foundation for the entire property before a single room is designed — the north star every later decision is measured against.",
+      "Establish the intellectual and emotional foundation for the entire property before a single room is designed. This becomes the north star every later decision is measured against.",
     strategicObjective:
       "Position the property as a singular cultural destination rather than a restaurant, club or hotel, and codify the standards that protect that positioning globally.",
     designResponsibilities: [
@@ -74,7 +74,7 @@ export const scopePhases: ScopePhase[] = [
     id: "phase-02",
     number: "02",
     title: "Story, Guest Journey & Spatial Programming",
-    summary: "Map the entire journey through the house — public, private and hidden — as an emotional sequence.",
+    summary: "Map the entire journey through the house, across public, private and hidden spaces, as an emotional sequence.",
     purpose:
       "Translate the creative foundation into a spatial and narrative structure: how a guest moves, what they feel, and how the house reveals itself over time and across repeat visits.",
     strategicObjective:
@@ -111,7 +111,7 @@ export const scopePhases: ScopePhase[] = [
     title: "Architecture & Interior Creative Direction",
     summary: "Give every room its own visual identity and architectural story.",
     purpose:
-      "Develop the room-by-room design language — materials, light, furniture, thresholds and hidden moments — that makes each space its own world while remaining one house.",
+      "Develop the room-by-room design language through materials, light, furniture, thresholds and hidden moments, making each space its own world while remaining one house.",
     strategicObjective:
       "Create residential intimacy and artist-residence atmosphere that no competitor can template.",
     designResponsibilities: [
@@ -147,7 +147,7 @@ export const scopePhases: ScopePhase[] = [
     title: "Experience Engineering",
     summary: "Engineer the invisible systems that make rooms transform, respond and reset.",
     purpose:
-      "Design the technical backbone — light, sound, media, scent, sensors and kinetics — that delivers the emotional objectives reliably, safely and repeatably.",
+      "Design the technical backbone of light, sound, media, scent, sensors and kinetics to deliver the emotional objectives reliably, safely and repeatably.",
     strategicObjective:
       "Make the magic operational: every reveal, transformation and sensory effect must run flawlessly night after night.",
     designResponsibilities: [
@@ -182,7 +182,7 @@ export const scopePhases: ScopePhase[] = [
     title: "Art, Music & Cultural Programming",
     summary: "Keep the house culturally alive with rotating art, curated sound and live culture.",
     purpose:
-      "Build the living cultural program — the art, music and performance identity — that gives the house ongoing significance and a reason to return.",
+      "Build the living cultural program, including its art, music and performance identity, to give the house ongoing significance and a reason to return.",
     strategicObjective:
       "Establish the property as a genuine cultural institution, not a themed backdrop.",
     designResponsibilities: [
@@ -217,7 +217,7 @@ export const scopePhases: ScopePhase[] = [
     title: "Culinary & Hospitality Integration",
     summary: "Weave dining and service into the house as ritual, not the sole event.",
     purpose:
-      "Choreograph food, drink and service as chapters of the experience — integrated with performance, environment and personalization.",
+      "Choreograph food, drink and service as chapters of the experience, integrated with performance, environment and personalization.",
     strategicObjective:
       "Make hospitality feel like being hosted in a remarkable home rather than served in a venue.",
     designResponsibilities: [
@@ -285,7 +285,7 @@ export const scopePhases: ScopePhase[] = [
     title: "Digital Experience & Interactive Tour",
     summary: "Build the cinematic website and lay the foundation for a full virtual walkthrough.",
     purpose:
-      "Create the digital front door — cinematic, story-driven — and architect the data and media structure for a future interactive, headset-ready tour.",
+      "Create a cinematic, story-driven digital front door and architect the data and media structure for a future interactive, headset-ready tour.",
     strategicObjective:
       "Make the digital experience a genuine extension of the house and a platform the property can grow into over years.",
     designResponsibilities: [
@@ -356,7 +356,7 @@ export const scopePhases: ScopePhase[] = [
     purpose:
       "Provide on-site creative supervision through installation, styling and calibration to ensure the realized property protects the design intent.",
     strategicObjective:
-      "Guarantee that what opens is what was promised — down to the light levels and the last styled object.",
+      "Guarantee that what opens is what was promised, down to the light levels and the last styled object.",
     designResponsibilities: [
       "Styling and furniture/art placement",
       "Installation review and design-intent protection",

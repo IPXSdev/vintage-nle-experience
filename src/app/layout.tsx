@@ -20,7 +20,7 @@ const bodySans = Inter({
 export const metadata: Metadata = {
   title: "VINTAGE × NLE | A House of Culture, Sound, Art and Transformation",
   description:
-    "An immersive hospitality world where the house itself is the attraction — a cinematic residence of art, music, ritual and hidden rooms.",
+    "An immersive hospitality world where the house itself is the attraction: a cinematic residence of art, music, ritual and hidden rooms.",
   openGraph: {
     title: "VINTAGE × NLE",
     description:

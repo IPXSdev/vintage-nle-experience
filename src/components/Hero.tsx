@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react"
 import { VintageTitle } from "./VintageTitle"
 
 /**
- * Landing hero — the VINTAGE cinematic experience film as a muted, looping
+ * Landing hero: the VINTAGE cinematic experience film as a muted, looping
  * atmospheric background. The same master asset is presented full-screen with
  * sound on the /experience page; this placement references it silently.
  *

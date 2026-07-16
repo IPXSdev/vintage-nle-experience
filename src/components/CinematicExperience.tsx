@@ -61,7 +61,7 @@ export function CinematicExperience() {
         await el.requestFullscreen()
       }
     } catch {
-      /* fullscreen unsupported (e.g. iOS Safari) — 100svh fallback covers it */
+      /* Fullscreen unsupported (e.g. iOS Safari). The 100svh fallback covers it. */
     }
   }, [])
 

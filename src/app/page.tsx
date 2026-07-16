@@ -6,7 +6,7 @@ const doctrine = [
   {
     k: "I",
     title: "The house is the attraction",
-    body: "Not a themed restaurant or a club, but a residence people travel to enter — a world with its own memory, myths and gravity.",
+    body: "Not a themed restaurant or a club, but a residence people travel to enter, with its own memory, myths and gravity.",
   },
   {
     k: "II",
@@ -16,7 +16,7 @@ const doctrine = [
   {
     k: "III",
     title: "Music as architecture",
-    body: "Sound, acoustics and listening rituals are designed as structure — something you sit inside rather than hear in passing.",
+    body: "Sound, acoustics and listening rituals are designed as structure, something you sit inside rather than hear in passing.",
   },
   {
     k: "IV",
@@ -26,7 +26,7 @@ const doctrine = [
   {
     k: "V",
     title: "A living cultural gallery",
-    body: "Rotating art, commissions and performance keep the residence culturally significant — an institution, never a backdrop.",
+    body: "Rotating art, commissions and performance keep the residence culturally significant. It is an institution, never a backdrop.",
   },
   {
     k: "VI",
@@ -44,13 +44,13 @@ export default function Home() {
         <div className="shell">
           <p className="sec-eyebrow">The creative doctrine</p>
           <h2 className="manifesto-h text-balance">
-            A house of culture, sound, art and transformation — where the building itself is the
+            A house of culture, sound, art and transformation, where the building itself is the
             performance.
           </h2>
           <p className="manifesto-p text-pretty">
             VINTAGE is conceived as an immersive residence: cinematic, tactile, rebellious and highly
             collected. It borrows nothing from hotel lobbies or corporate luxury. Instead it feels
-            like the home of someone impossibly interesting — velvet and crystal, smoke and mirrored
+            like the home of someone impossibly interesting, with velvet and crystal, smoke and mirrored
             light, art on every wall and a secret behind more than one door.
           </p>
         </div>
@@ -77,7 +77,7 @@ export default function Home() {
           <p className="sec-eyebrow">The film</p>
           <h2 className="invitation-h text-balance">Step inside, in one unbroken take.</h2>
           <p className="invitation-p text-pretty">
-            The full residence, captured as a single cinematic experience — presented full-screen,
+            The full residence, captured as a single cinematic experience and presented full-screen,
             with sound. Enter when you are ready to be somewhere else.
           </p>
           <Link className="cine-btn cine-btn-primary" href="/experience">

@@ -1,4 +1,4 @@
-# VINTAGE × NLE — v0 Continuation Handoff
+# VINTAGE × NLE: v0 Continuation Handoff
 
 ## Mandatory preflight
 This is an existing Next.js App Router project. Do not generate a replacement project and do not restart the design from a blank canvas.

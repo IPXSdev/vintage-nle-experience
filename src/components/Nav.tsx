@@ -15,7 +15,7 @@ const LINKS = [
  *
  * The surface is a layered CSS material (velvet texture + sequin dots + blur).
  * A pointer listener writes `--sx` / `--sy` custom properties so a soft specular
- * sheen follows the cursor — the "catching moving light" effect. On scroll the
+ * sheen follows the cursor, creating the "catching moving light" effect. On scroll the
  * bar gains density via a class toggle. All effects are progressive enhancement:
  * the nav is fully usable with no JS, and sheen motion is disabled under
  * `prefers-reduced-motion`.
@@ -64,7 +64,7 @@ export function Nav() {
     }
   }, [])
 
-  // The Experience page is a full-screen cinematic film — render no site chrome.
+  // The Experience page is a full-screen cinematic film, so render no site chrome.
   if (pathname === "/experience") return null
 
   return (

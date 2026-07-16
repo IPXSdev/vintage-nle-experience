@@ -4,9 +4,9 @@ import { ScopeAccordion } from "@/components/ScopeAccordion"
 import { scopePhases } from "@/lib/scope-phases"
 
 export const metadata: Metadata = {
-  title: "Scope of Work — VINTAGE",
+  title: "Scope of Work | VINTAGE",
   description:
-    "The phased creative and experience engagement for the VINTAGE residence — an editorial map of every phase, deliverable and approval gate that protects the vision from foundation to opening.",
+    "The phased creative and experience engagement for the VINTAGE residence. An editorial map of every phase, deliverable and approval gate protects the vision from foundation to opening.",
 }
 
 export default function ScopePage() {
@@ -20,8 +20,8 @@ export default function ScopePage() {
             A phased engagement built to protect the vision at every gate.
           </h1>
           <p className="scope-hero-p text-pretty">
-            The work moves in deliberate phases — each with its own purpose, deliverables and approval
-            gate — so the creative foundation, the rooms, the engineering and the global rollout are
+            The work moves in deliberate phases, each with its own purpose, deliverables and approval
+            gate. This confirms the creative foundation, the rooms, the engineering and the global rollout in
             confirmed in the right order. Expand any phase to read its full remit.
           </p>
           <div className="scope-meta">
@@ -36,13 +36,13 @@ export default function ScopePage() {
         <figure className="scope-still">
           <Image
             src="/images/vintage-bodega.webp"
-            alt="The Bodega at VINTAGE — a warm, golden corner shop with an ornate gilded wood counter, a clerk in shirt and tie, red-shaded lamps and shelves of bottles and collectibles under lamplight."
+            alt="The Bodega at VINTAGE, a warm, golden corner shop with an ornate gilded wood counter, a clerk in shirt and tie, red-shaded lamps and shelves of bottles and collectibles under lamplight."
             fill
             sizes="(max-width: 900px) 100vw, 1200px"
             style={{ objectFit: "cover", objectPosition: "center" }}
           />
           <figcaption className="scope-still-cap">
-            The finished world — every phase exists to deliver rooms like this, resolved to the last detail.
+            The finished world. Every phase exists to deliver rooms like this, resolved to the last detail.
           </figcaption>
         </figure>
       </section>
