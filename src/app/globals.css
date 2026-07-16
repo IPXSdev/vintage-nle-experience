@@ -24,7 +24,7 @@ main > .section:first-child,main > .xp-wrap:first-child,.below-nav{padding-top:c
   background:linear-gradient(180deg,rgba(9,9,8,.55),rgba(9,9,8,.28));
   border-bottom:1px solid transparent;transition:background .5s ease,border-color .5s ease,box-shadow .5s ease}
 .vnav:before{content:"";position:absolute;inset:0;z-index:-2;
-  background-image:url('/experience/system/velvet-nav.png');background-size:cover;background-position:center;
+  background-image:url('/experience/system/velvet-nav.webp');background-size:cover;background-position:center;
   opacity:0;transition:opacity .5s ease}
 .vnav:after{content:"";position:absolute;inset:0;z-index:-1;
   background-image:radial-gradient(rgba(255,255,255,.05) 1px,transparent 1.4px);background-size:7px 7px;
@@ -97,7 +97,7 @@ main > .section:first-child,main > .xp-wrap:first-child,.below-nav{padding-top:c
 .vintage-sweep{position:absolute;inset:0;z-index:2;pointer-events:none;mix-blend-mode:screen;
   background:linear-gradient(105deg,transparent 40%,rgba(255,255,255,.55) 49%,rgba(255,255,255,.08) 55%,transparent 62%);
   background-size:280% 100%;animation:titleSweep 7s ease-in-out infinite;
-  -webkit-mask-image:url('/experience/system/vintage-wordmark.png');mask-image:url('/experience/system/vintage-wordmark.png');
+  -webkit-mask-image:url('/experience/system/vintage-wordmark.webp');mask-image:url('/experience/system/vintage-wordmark.webp');
   -webkit-mask-size:contain;mask-size:contain;-webkit-mask-position:center;mask-position:center;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat}
 
 /* ============================================================

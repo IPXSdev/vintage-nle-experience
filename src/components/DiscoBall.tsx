@@ -14,7 +14,7 @@ export function DiscoBall() {
       <div className="disco-glow" />
       <div className="disco-spin">
         <Image
-          src="/experience/system/disco-ball.png"
+          src="/experience/system/disco-ball.webp"
           alt=""
           fill
           sizes="(max-width: 800px) 150px, 210px"
