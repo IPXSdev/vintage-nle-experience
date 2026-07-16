@@ -1,33 +1,88 @@
-import Link from 'next/link'
-import { ArrowUpRight, Eye, Layers3, Radio, Sparkles, Globe2, Music2 } from 'lucide-react'
+import Link from "next/link"
+import { Hero } from "@/components/Hero"
+import { RoomsGallery } from "@/components/RoomsGallery"
+
+const doctrine = [
+  {
+    k: "I",
+    title: "The house is the attraction",
+    body: "Not a themed restaurant or a club, but a residence people travel to enter — a world with its own memory, myths and gravity.",
+  },
+  {
+    k: "II",
+    title: "Every room is its own world",
+    body: "Distinct material languages, lighting scenes and emotional tones, so moving through the house feels like moving through chapters.",
+  },
+  {
+    k: "III",
+    title: "Music as architecture",
+    body: "Sound, acoustics and listening rituals are designed as structure — something you sit inside rather than hear in passing.",
+  },
+  {
+    k: "IV",
+    title: "Hidden rooms and reveals",
+    body: "Concealed doors, changing thresholds and rewards for curiosity keep the house alive and give every visit a secret to find.",
+  },
+  {
+    k: "V",
+    title: "A living cultural gallery",
+    body: "Rotating art, commissions and performance keep the residence culturally significant — an institution, never a backdrop.",
+  },
+  {
+    k: "VI",
+    title: "International by design",
+    body: "A protected global doctrine expressed through locally specific art, sound, food and ritual in every city it enters.",
+  },
+]
 
 export default function Home() {
   return (
     <main>
-      <section className="hero">
+      <Hero />
+
+      <section className="manifesto">
         <div className="shell">
-          <div className="eyebrow">A destination hospitality world</div>
-          <h1>THE HOUSE IS THE ATTRACTION.</h1>
-          <p>A living cultural residence where every room becomes its own world of music, art, dining, performance, discovery and private ritual.</p>
-          <div className="actions">
-            <Link className="btn primary" href="/full-experience">Enter the full experience <ArrowUpRight size={16} /></Link>
-            <Link className="btn" href="/scope">Review revised Phase 01 scope</Link>
+          <p className="sec-eyebrow">The creative doctrine</p>
+          <h2 className="manifesto-h text-balance">
+            A house of culture, sound, art and transformation — where the building itself is the
+            performance.
+          </h2>
+          <p className="manifesto-p text-pretty">
+            VINTAGE is conceived as an immersive residence: cinematic, tactile, rebellious and highly
+            collected. It borrows nothing from hotel lobbies or corporate luxury. Instead it feels
+            like the home of someone impossibly interesting — velvet and crystal, smoke and mirrored
+            light, art on every wall and a secret behind more than one door.
+          </p>
+        </div>
+      </section>
+
+      <section className="doctrine">
+        <div className="shell">
+          <div className="doctrine-grid">
+            {doctrine.map((d) => (
+              <article className="crystal-card" key={d.k}>
+                <span className="crystal-num">{d.k}</span>
+                <h3>{d.title}</h3>
+                <p>{d.body}</p>
+              </article>
+            ))}
           </div>
         </div>
       </section>
-      <section className="section">
-        <div className="shell">
-          <div className="eyebrow">The fixed creative doctrine</div>
-          <h2>Not a themed restaurant. A world people travel to enter.</h2>
-          <p className="sectionintro">The digital MVP now reflects the specific experience program from discovery and gives the client one place to understand the vision, scope, progress and engineering decisions.</p>
-          <div className="grid">
-            <article className="card span4"><Sparkles /><h3>Constant Discovery</h3><p>Hidden thresholds, changing environments and unexpected reveals create reasons to return.</p></article>
-            <article className="card span4"><Music2 /><h3>Music as Architecture</h3><p>Sound, acoustics, eras and listening rituals actively shape the identity of every room.</p></article>
-            <article className="card span4"><Globe2 /><h3>International by Design</h3><p>A protected global doctrine with culturally specific art, food, sound and programming by market.</p></article>
-            <article className="card span4"><Eye /><h3>Virtual Experience</h3><p>A cinematic digital twin that grows into the interactive tour, sales tool and expansion reference.</p></article>
-            <article className="card span4"><Layers3 /><h3>Client Scope</h3><p>Clear phases, approval gates, revised fees, exclusions and the exact Phase 01 invoice structure.</p></article>
-            <article className="card span4"><Radio /><h3>Production Control</h3><p>Experience systems, dependencies, owners, decisions, risks and next actions in one command center.</p></article>
-          </div>
+
+      <RoomsGallery />
+
+      <section className="invitation">
+        <div className="shell invitation-in">
+          <p className="sec-eyebrow">The film</p>
+          <h2 className="invitation-h text-balance">Step inside, in one unbroken take.</h2>
+          <p className="invitation-p text-pretty">
+            The full residence, captured as a single cinematic experience — presented full-screen,
+            with sound. Enter when you are ready to be somewhere else.
+          </p>
+          <Link className="cine-btn cine-btn-primary" href="/experience">
+            Enter the Experience
+          </Link>
         </div>
       </section>
     </main>
