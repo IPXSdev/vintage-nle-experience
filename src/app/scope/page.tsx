@@ -6,7 +6,7 @@ import { scopePhases } from "@/lib/scope-phases"
 export const metadata: Metadata = {
   title: "Scope of Work | VINTAGE",
   description:
-    "The phased creative and experience engagement for the VINTAGE residence. An editorial map of every phase, deliverable and approval gate protects the vision from foundation to opening.",
+    "The phased creative and experience engagement for Vintage House, from defining a 5,000-square-foot commercial site brief through opening.",
 }
 
 export default function ScopePage() {
@@ -20,15 +20,15 @@ export default function ScopePage() {
             A phased engagement built to protect the vision at every gate.
           </h1>
           <p className="scope-hero-p text-pretty">
-            The work moves in deliberate phases, each with its own purpose, deliverables and approval
-            gate. This confirms the creative foundation, the rooms, the engineering and the global rollout in
-            confirmed in the right order. Expand any phase to read its full remit.
+            The work moves in deliberate phases, from defining the commercial location criteria and
+            testing candidate sites through rooms, engineering and opening. Each phase has its own purpose,
+            deliverables and approval gate. Expand any phase to read its full remit.
           </p>
           <div className="scope-meta">
             <span>
               <strong>{scopePhases.length}</strong> phases
             </span>
-            <span>Foundation → Opening</span>
+            <span>Site Brief to Opening</span>
             <span>Gated approvals</span>
           </div>
         </div>
@@ -57,7 +57,7 @@ export default function ScopePage() {
               Architecture, engineering stamps, permitting, construction and general contracting,
               food and beverage operations, licensing, and any third-party fabrication or
               procurement costs are engaged and contracted separately. This scope governs the
-              creative direction, experience design and production oversight of the residence.
+              creative direction, experience design and production oversight of the Vintage House venue.
             </p>
           </aside>
         </div>

@@ -18,13 +18,13 @@ const bodySans = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "VINTAGE × NLE | A House of Culture, Sound, Art and Transformation",
+  title: "VINTAGE × NLE | A Cultural Destination by Vintage House",
   description:
-    "An immersive hospitality world where the house itself is the attraction: a cinematic residence of art, music, ritual and hidden rooms.",
+    "Vintage House is an immersive hospitality concept designed for an approximately 5,000-square-foot commercial location of art, music, ritual and hidden rooms.",
   openGraph: {
     title: "VINTAGE × NLE",
     description:
-      "A House of Culture, Sound, Art and Transformation. Step inside an immersive residence of art, music and ritual.",
+      "A destination for culture, sound, art and transformation. Step inside the Vintage House experience of art, music and ritual.",
     type: "website",
   },
 };
