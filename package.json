@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "check:punctuation": "node scripts/check-punctuation.mjs",
     "dev": "next dev",
-    "build": "next build",
+    "build": "node scripts/check-punctuation.mjs && next build",
     "start": "next start",
     "lint": "eslint"
   },
