@@ -64,6 +64,9 @@ export function Nav() {
     }
   }, [])
 
+  // The Experience page is a full-screen cinematic film — render no site chrome.
+  if (pathname === "/experience") return null
+
   return (
     <nav ref={navRef} className={`vnav${scrolled ? " is-scrolled" : ""}`} aria-label="Primary">
       <span className="vnav-sheen" aria-hidden="true" />

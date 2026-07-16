@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { Hero } from "@/components/Hero"
+import { RoomsGallery } from "@/components/RoomsGallery"
 
 const doctrine = [
   {
@@ -69,13 +70,15 @@ export default function Home() {
         </div>
       </section>
 
+      <RoomsGallery />
+
       <section className="invitation">
         <div className="shell invitation-in">
-          <p className="sec-eyebrow">The walkthrough</p>
-          <h2 className="invitation-h text-balance">Move through the house, chapter by chapter.</h2>
+          <p className="sec-eyebrow">The film</p>
+          <h2 className="invitation-h text-balance">Step inside, in one unbroken take.</h2>
           <p className="invitation-p text-pretty">
-            Eleven cinematic chapters — from the unmarked arrival to the lingering departure — trace
-            the full emotional journey of the residence, built to grow into a fully interactive tour.
+            The full residence, captured as a single cinematic experience — presented full-screen,
+            with sound. Enter when you are ready to be somewhere else.
           </p>
           <Link className="cine-btn cine-btn-primary" href="/experience">
             Enter the Experience

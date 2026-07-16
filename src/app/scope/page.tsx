@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Image from "next/image"
 import { ScopeAccordion } from "@/components/ScopeAccordion"
 import { scopePhases } from "@/lib/scope-phases"
 
@@ -31,6 +32,19 @@ export default function ScopePage() {
             <span>Gated approvals</span>
           </div>
         </div>
+
+        <figure className="scope-still">
+          <Image
+            src="/images/vintage-bodega.webp"
+            alt="The Bodega at VINTAGE — a warm, golden corner shop with an ornate gilded wood counter, a clerk in shirt and tie, red-shaded lamps and shelves of bottles and collectibles under lamplight."
+            fill
+            sizes="(max-width: 900px) 100vw, 1200px"
+            style={{ objectFit: "cover", objectPosition: "center" }}
+          />
+          <figcaption className="scope-still-cap">
+            The finished world — every phase exists to deliver rooms like this, resolved to the last detail.
+          </figcaption>
+        </figure>
       </section>
 
       <section className="scope-wrap">
