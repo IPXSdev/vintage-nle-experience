@@ -15,7 +15,10 @@ import { VintageTitle } from "./VintageTitle"
  * instead of the video. The poster guarantees the hero is never blank even if a
  * browser blocks autoplay or the film has not been uploaded yet.
  */
-const VIDEO_SRC = "/media/vintage-cinematic-experience.mp4"
+// Single source of truth: the film is hosted in a public Vercel Blob store and
+// its URL is provided via this env var. If it is temporarily missing we retain
+// the Lounge poster and never render a broken/erroring video element.
+const VIDEO_SRC = process.env.NEXT_PUBLIC_VINTAGE_FILM_URL
 const POSTER_SRC = "/media/vintage-cinematic-poster.webp"
 
 export function Hero() {
@@ -34,7 +37,7 @@ export function Hero() {
   // muted attribute on first paint, which some engines require for autoplay).
   useEffect(() => {
     const v = videoRef.current
-    if (!v || reducedMotion) return
+    if (!v || reducedMotion || !VIDEO_SRC) return
     v.muted = true
     v.defaultMuted = true
     const p = v.play()
@@ -44,7 +47,7 @@ export function Hero() {
   return (
     <header className="cine-hero">
       <div className="cine-media" aria-hidden="true">
-        {reducedMotion ? (
+        {reducedMotion || !VIDEO_SRC ? (
           // eslint-disable-next-line @next/next/no-img-element
           <img className="cine-video" src={POSTER_SRC || "/placeholder.svg"} alt="" />
         ) : (
@@ -58,6 +61,11 @@ export function Hero() {
             preload="metadata"
             poster={POSTER_SRC}
             tabIndex={-1}
+            controls={false}
+            controlsList="nodownload noplaybackrate noremoteplayback"
+            disablePictureInPicture
+            disableRemotePlayback
+            onContextMenu={(e) => e.preventDefault()}
           >
             <source src={VIDEO_SRC} type="video/mp4" />
           </video>

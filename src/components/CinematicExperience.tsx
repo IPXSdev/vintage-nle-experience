@@ -16,7 +16,10 @@ import { useRouter } from "next/navigation"
  *
  * Uses `contain` (letterbox) so the original cinematic aspect ratio is honored.
  */
-const VIDEO_SRC = "/media/vintage-cinematic-experience.mp4"
+// Single source of truth: the finished film lives in a public Vercel Blob store,
+// its URL supplied via this env var. If missing, we keep the Lounge poster and
+// never surface a broken video element or error.
+const VIDEO_SRC = process.env.NEXT_PUBLIC_VINTAGE_FILM_URL
 const POSTER_SRC = "/media/vintage-cinematic-poster.webp"
 const CINEMATIC_VOLUME = 0.85
 const IDLE_MS = 2600
@@ -196,6 +199,11 @@ export function CinematicExperience() {
         playsInline
         preload="metadata"
         poster={POSTER_SRC}
+        controls={false}
+        controlsList="nodownload noplaybackrate noremoteplayback"
+        disablePictureInPicture
+        disableRemotePlayback
+        onContextMenu={(e) => e.preventDefault()}
         onClick={started ? togglePlay : undefined}
         onPlay={() => setPlaying(true)}
         onPause={() => setPlaying(false)}
@@ -207,7 +215,7 @@ export function CinematicExperience() {
           setControlsVisible(true)
         }}
       >
-        <source src={VIDEO_SRC} type="video/mp4" />
+        {VIDEO_SRC ? <source src={VIDEO_SRC} type="video/mp4" /> : null}
       </video>
 
       {/* Entry overlay */}
