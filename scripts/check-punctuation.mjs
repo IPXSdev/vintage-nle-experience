@@ -1,6 +1,5 @@
-import { execFileSync } from "node:child_process"
-import { readFileSync } from "node:fs"
-import { extname } from "node:path"
+import { readFileSync, readdirSync } from "node:fs"
+import { extname, join } from "node:path"
 
 const binaryExtensions = new Set([
   ".avif",
@@ -27,10 +26,20 @@ const forbiddenPatterns = [
   { label: "escaped em dash character", value: "\\u" + "2014" },
 ]
 
-const files = execFileSync("git", ["ls-files", "-z"], { encoding: "utf8" })
-  .split("\0")
-  .filter(Boolean)
-  .filter((file) => !binaryExtensions.has(extname(file).toLowerCase()))
+const ignoredDirectories = new Set([".git", ".next", ".vercel", "coverage", "node_modules", "out"])
+
+function findTextFiles(directory = ".") {
+  return readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
+    if (entry.isDirectory() && ignoredDirectories.has(entry.name)) return []
+
+    const path = join(directory, entry.name)
+    if (entry.isDirectory()) return findTextFiles(path)
+    if (!entry.isFile() || binaryExtensions.has(extname(entry.name).toLowerCase())) return []
+    return [path]
+  })
+}
+
+const files = findTextFiles()
 
 const violations = []
 
@@ -50,4 +59,4 @@ if (violations.length > 0) {
   process.exit(1)
 }
 
-console.log(`Punctuation check passed across ${files.length} tracked text files.`)
+console.log(`Punctuation check passed across ${files.length} text files.`)
