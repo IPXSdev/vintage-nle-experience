@@ -16,7 +16,7 @@ export function VintageTitle() {
     <div className="vintage-title" role="img" aria-label="VINTAGE">
       <div className="vintage-title-inner">
         <Image
-          src="/experience/system/vintage-wordmark.png"
+          src="/experience/system/vintage-wordmark.webp"
           alt=""
           fill
           priority
