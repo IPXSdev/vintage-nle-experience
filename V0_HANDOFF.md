@@ -25,6 +25,9 @@ Preserve:
 - VINTAGE × NLE naming
 - IPXS creative-direction attribution
 
+## Copy standard
+Use clean, traditional punctuation throughout all visible copy, metadata, accessibility text, and hidden interface text. Do not use em dashes.
+
 Do not replace the project with a generic restaurant template, luxury gold theme, conventional hospitality website, or standard card-grid landing page.
 
 ## Current commercial structure
