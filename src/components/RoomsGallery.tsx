@@ -29,7 +29,7 @@ const ROOMS: Room[] = [
     alt: "The Lounge Area at VINTAGE, a candlelit salon with distressed terracotta walls, a mauve velvet sofa and guests in evening dress gathered around a marble table.",
     eyebrow: "The arrival",
     title: "The Lounge",
-    body: "The first room you enter is the last you want to leave. Candlelight on old plaster, low velvet seating and the hum of a gathering already in motion set the register for the entire house: intimate, collected, alive.",
+    body: "The first room you enter is the last you want to leave. Candlelight on old plaster, low velvet seating and the hum of a gathering already in motion set the register for Vintage House: intimate, collected, alive.",
     variant: "wide",
     focus: "center",
   },
@@ -47,7 +47,7 @@ const ROOMS: Room[] = [
     alt: "The Game Room at VINTAGE, a neon-lit arcade lounge with cabinets, CRT televisions running retro games, bean-bag seating and shelves of collectible consoles above a city skyline.",
     eyebrow: "The play",
     title: "The Game Room",
-    body: "This is where the house lets its guard down. Arcade light, cathode glow and low seating are pulled around a wall of screens. Competition, nostalgia and late-night ease make this a room you fall into for hours.",
+    body: "This is where Vintage House lets its guard down. Arcade light, cathode glow and low seating are pulled around a wall of screens. Competition, nostalgia and late-night ease make this a room you fall into for hours.",
     variant: "right",
     focus: "center",
   },
@@ -56,7 +56,7 @@ const ROOMS: Room[] = [
     alt: "The Bodega at VINTAGE, a warm, golden corner shop with an ornate gilded wood counter, a clerk in shirt and tie, red-shaded lamps, shelves of bottles and collectibles and a glowing display fridge.",
     eyebrow: "The discovery",
     title: "The Bodega",
-    body: "The final turn reveals a jewel-box shop of bottles, artifacts and curiosities under warm lamplight, tended like a private collection. The house sends you off with something found, a keepsake from a world you were let into.",
+    body: "The final turn reveals a jewel-box shop of bottles, artifacts and curiosities under warm lamplight, tended like a private collection. Vintage House sends you off with something found, a keepsake from a world you were let into.",
     variant: "left",
     focus: "center",
   },
@@ -68,7 +68,7 @@ export function RoomsGallery() {
       <div className="shell">
         <p className="sec-eyebrow">Every room is its own world</p>
         <h2 className="rooms-h text-balance">
-          A residence of distinct rooms, each a world with its own light, sound and ritual.
+          A destination of distinct rooms, each a world with its own light, sound and ritual.
         </h2>
 
         <div className="rooms-flow">

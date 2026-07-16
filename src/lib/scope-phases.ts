@@ -37,22 +37,24 @@ export const scopePhases: ScopePhase[] = [
   {
     id: "phase-01",
     number: "01",
-    title: "Experience Strategy & Creative Foundation",
-    summary: "Define what the house is, who it is for, and the feeling it exists to create.",
+    title: "Experience Strategy, Site Brief & Creative Foundation",
+    summary: "Define the Vintage House concept and the requirements for an approximately 5,000-square-foot commercial location.",
     purpose:
-      "Establish the intellectual and emotional foundation for the entire property before a single room is designed. This becomes the north star every later decision is measured against.",
+      "Establish the intellectual, emotional and real estate brief before a location is selected or a room is designed. This becomes the north star every later decision is measured against.",
     strategicObjective:
-      "Position the property as a singular cultural destination rather than a restaurant, club or hotel, and codify the standards that protect that positioning globally.",
+      "Position Vintage House as a singular cultural destination rather than a conventional restaurant, club or hotel, and define the commercial site criteria needed to support it.",
     designResponsibilities: [
       "Discovery synthesis of all inputs, references and ambitions",
       "Brand and cultural research",
-      "Property vision and creative manifesto",
+      "Vintage House vision and creative manifesto",
+      "Commercial site criteria for an approximately 5,000-square-foot location",
       "Global concept standards and design principles",
     ],
     experienceResponsibilities: [
       "Experience positioning and audience definition",
-      "Emotional objectives for the house as a whole",
+      "Emotional objectives for the Vintage House experience as a whole",
       "Master experience narrative",
+      "Site selection criteria and spatial requirements brief",
     ],
     deliverables: [
       "Discovery synthesis document",
@@ -62,27 +64,30 @@ export const scopePhases: ScopePhase[] = [
       "Initial executive presentation",
     ],
     clientDecisions: [
-      "Endorsement of the property vision and positioning",
+      "Endorsement of the Vintage House vision and positioning",
+      "Approval of the target footprint, market and commercial location criteria",
       "Approval of the creative manifesto and guiding principles",
     ],
-    specialists: ["Cultural researchers", "Brand strategists"],
-    dependencies: ["Access to stakeholders, references and any existing brand material"],
-    approvalGate: "Signed-off creative foundation and master narrative.",
-    nextPhase: "The approved narrative and principles drive the guest journey and spatial program in Phase 02.",
+    specialists: ["Cultural researchers", "Brand strategists", "Commercial real estate and zoning advisors"],
+    dependencies: ["Access to stakeholders, references, market priorities and any existing brand material"],
+    approvalGate: "Signed-off creative foundation, master narrative and commercial site brief.",
+    nextPhase: "The approved narrative and site criteria drive candidate evaluation, guest journey and spatial programming in Phase 02.",
+    note: "Site acquisition, zoning confirmation, code review and permitting require qualified local professionals engaged separately from creative direction.",
   },
   {
     id: "phase-02",
     number: "02",
     title: "Story, Guest Journey & Spatial Programming",
-    summary: "Map the entire journey through the house, across public, private and hidden spaces, as an emotional sequence.",
+    summary: "Map the full Vintage House journey and test it against candidate commercial locations.",
     purpose:
-      "Translate the creative foundation into a spatial and narrative structure: how a guest moves, what they feel, and how the house reveals itself over time and across repeat visits.",
+      "Translate the creative foundation into a spatial and narrative structure: how a guest moves, what they feel, and how Vintage House reveals itself over time and across repeat visits.",
     strategicObjective:
-      "Engineer emotional pacing and circulation so the property rewards both first visits and long-term devotion.",
+      "Engineer emotional pacing and circulation so the selected location rewards both first visits and long-term devotion.",
     designResponsibilities: [
       "Room hierarchy and adjacency planning",
       "Circulation and transition moments",
       "Public, private and hidden zone definition",
+      "Candidate location fit testing against the approved site brief",
     ],
     experienceResponsibilities: [
       "Full guest journey with arrival and departure sequence",
@@ -95,14 +100,16 @@ export const scopePhases: ScopePhase[] = [
       "Zoning and adjacency diagrams",
       "Room program with purpose and capacity",
       "Repeat-visit and reservation strategy",
+      "Candidate location experience-fit review",
     ],
     clientDecisions: [
       "Approval of the guest journey and zoning",
       "Confirmation of room program and capacities",
+      "Approval of a preferred commercial location before detailed design",
     ],
-    specialists: ["Operations consultants", "Hospitality flow planners"],
-    dependencies: ["Approved creative foundation (Phase 01)"],
-    approvalGate: "Approved guest journey, zoning and room program.",
+    specialists: ["Operations consultants", "Hospitality flow planners", "Licensed architects and code consultants"],
+    dependencies: ["Approved creative foundation and site brief (Phase 01)", "Verified plans and site data for each candidate location"],
+    approvalGate: "Approved commercial location, guest journey, zoning concept and room program.",
     nextPhase: "The spatial program sets the brief for architecture and interior creative direction in Phase 03.",
   },
   {
@@ -111,9 +118,9 @@ export const scopePhases: ScopePhase[] = [
     title: "Architecture & Interior Creative Direction",
     summary: "Give every room its own visual identity and architectural story.",
     purpose:
-      "Develop the room-by-room design language through materials, light, furniture, thresholds and hidden moments, making each space its own world while remaining one house.",
+      "Develop the room-by-room design language through materials, light, furniture, thresholds and hidden moments, making each space its own world within one coherent Vintage House experience.",
     strategicObjective:
-      "Create residential intimacy and artist-residence atmosphere that no competitor can template.",
+      "Translate the intimacy and collected character of a legendary creative residence into a code-compliant commercial venue that no competitor can template.",
     designResponsibilities: [
       "Room-by-room visual identities and material direction",
       "Furniture direction and custom millwork concepts",
@@ -123,7 +130,7 @@ export const scopePhases: ScopePhase[] = [
     ],
     experienceResponsibilities: [
       "Architectural storytelling per room",
-      "Residential intimacy and artist-residence atmosphere",
+      "Private, collected atmosphere with legendary creative-world energy",
     ],
     deliverables: [
       "Room-by-room creative direction packages",
@@ -139,7 +146,7 @@ export const scopePhases: ScopePhase[] = [
     dependencies: ["Approved spatial program (Phase 02)"],
     approvalGate: "Approved creative direction for every room and exterior.",
     nextPhase: "Creative direction hands off to experience engineering in Phase 04.",
-    note: "Licensed architectural and engineering documents require qualified project professionals engaged separately from creative direction.",
+    note: "Licensed architectural and engineering documents, zoning confirmation, code review and permits require qualified project professionals engaged separately from creative direction.",
   },
   {
     id: "phase-04",
@@ -180,11 +187,11 @@ export const scopePhases: ScopePhase[] = [
     id: "phase-05",
     number: "05",
     title: "Art, Music & Cultural Programming",
-    summary: "Keep the house culturally alive with rotating art, curated sound and live culture.",
+    summary: "Keep Vintage House culturally alive with rotating art, curated sound and live culture.",
     purpose:
-      "Build the living cultural program, including its art, music and performance identity, to give the house ongoing significance and a reason to return.",
+      "Build the living cultural program, including its art, music and performance identity, to give Vintage House ongoing significance and a reason to return.",
     strategicObjective:
-      "Establish the property as a genuine cultural institution, not a themed backdrop.",
+      "Establish the venue as a genuine cultural institution, not a themed backdrop.",
     designResponsibilities: [
       "Living-gallery strategy and rotating art program",
       "Collector displays and archival material",
@@ -215,11 +222,11 @@ export const scopePhases: ScopePhase[] = [
     id: "phase-06",
     number: "06",
     title: "Culinary & Hospitality Integration",
-    summary: "Weave dining and service into the house as ritual, not the sole event.",
+    summary: "Weave dining and service into Vintage House as ritual, not the sole event.",
     purpose:
       "Choreograph food, drink and service as chapters of the experience, integrated with performance, environment and personalization.",
     strategicObjective:
-      "Make hospitality feel like being hosted in a remarkable home rather than served in a venue.",
+      "Make hospitality feel personal, intimate and hosted rather than processed through a conventional venue.",
     designResponsibilities: [
       "Table presentation and service-object direction",
       "Room-specific service experience design",
@@ -249,7 +256,7 @@ export const scopePhases: ScopePhase[] = [
     id: "phase-07",
     number: "07",
     title: "Brand World & Guest Touchpoints",
-    summary: "Extend the house into every object, message and material a guest touches.",
+    summary: "Extend Vintage House into every object, message and material a guest touches.",
     purpose:
       "Expand the visual identity across every physical and digital touchpoint so the brand world is coherent from invitation to merchandise.",
     strategicObjective:
@@ -287,7 +294,7 @@ export const scopePhases: ScopePhase[] = [
     purpose:
       "Create a cinematic, story-driven digital front door and architect the data and media structure for a future interactive, headset-ready tour.",
     strategicObjective:
-      "Make the digital experience a genuine extension of the house and a platform the property can grow into over years.",
+      "Make the digital experience a genuine extension of Vintage House and a platform the venue can grow into over years.",
     designResponsibilities: [
       "Cinematic website and room stories",
       "Image and video galleries",
@@ -352,9 +359,9 @@ export const scopePhases: ScopePhase[] = [
     id: "phase-10",
     number: "10",
     title: "Installation & Creative Supervision",
-    summary: "Supervise the build-out so the finished house matches the intent exactly.",
+    summary: "Supervise the build-out so the finished Vintage House venue matches the intent exactly.",
     purpose:
-      "Provide on-site creative supervision through installation, styling and calibration to ensure the realized property protects the design intent.",
+      "Provide on-site creative supervision through installation, styling and calibration to ensure the completed venue protects the design intent.",
     strategicObjective:
       "Guarantee that what opens is what was promised, down to the light levels and the last styled object.",
     designResponsibilities: [
@@ -378,7 +385,7 @@ export const scopePhases: ScopePhase[] = [
     specialists: ["Installers", "Calibration technicians", "Stylists"],
     dependencies: ["Fabrication and documentation (Phase 09)"],
     approvalGate: "Approved, calibrated and styled rooms.",
-    nextPhase: "The finished house enters soft opening and calibration in Phase 11.",
+    nextPhase: "The finished venue enters soft opening and calibration in Phase 11.",
   },
   {
     id: "phase-11",
@@ -417,11 +424,11 @@ export const scopePhases: ScopePhase[] = [
     id: "phase-12",
     number: "12",
     title: "Launch & Ongoing Programming",
-    summary: "Open the house and keep it evolving with seasonal culture and expansion standards.",
+    summary: "Open Vintage House and keep it evolving with seasonal culture and expansion standards.",
     purpose:
-      "Direct the launch experience and establish the ongoing creative program that keeps the property alive, current and ready to expand.",
+      "Direct the launch experience and establish the ongoing creative program that keeps the venue alive, current and ready to expand.",
     strategicObjective:
-      "Turn the opening into a sustained cultural presence and a repeatable model for future properties.",
+      "Turn the opening into a sustained cultural presence and a repeatable model for future locations.",
     designResponsibilities: [
       "Opening creative direction",
       "Seasonal room changes and content updates",
@@ -430,7 +437,7 @@ export const scopePhases: ScopePhase[] = [
       "Launch experience direction",
       "Ongoing art rotation and music programming",
       "Cultural events and member programming",
-      "International expansion standards and future property adaptations",
+      "International expansion standards and future location adaptations",
     ],
     deliverables: [
       "Launch experience direction",
@@ -444,7 +451,7 @@ export const scopePhases: ScopePhase[] = [
     specialists: ["Programming directors", "Marketing and events teams"],
     dependencies: ["Validated experience (Phase 11)"],
     approvalGate: "Successful launch and an active ongoing program.",
-    nextPhase: "The house operates as a living cultural institution, with standards ready to adapt to future properties worldwide.",
+    nextPhase: "Vintage House operates as a living cultural institution, with standards ready to adapt to future commercial locations worldwide.",
   },
 ]
 

@@ -1,6 +1,6 @@
 # Experience Walkthrough: Technical Roadmap
 
-The `/experience` route is built as a **manifest-driven cinematic walkthrough** today, with the data model deliberately shaped so it can grow into a **fully interactive 3D / metaverse-compatible property tour** with no data migration.
+The `/experience` route is built as a **manifest-driven cinematic walkthrough** today, with the data model deliberately shaped so it can grow into a **fully interactive 3D / metaverse-compatible venue tour** with no data migration.
 
 ## Stage 1: Cinematic media chapters (current / MVP)
 

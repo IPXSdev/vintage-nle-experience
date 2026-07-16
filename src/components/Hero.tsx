@@ -74,10 +74,10 @@ export function Hero() {
       </div>
 
       <div className="cine-inner">
-        <p className="cine-eyebrow">An immersive house of culture</p>
+        <p className="cine-eyebrow">An immersive cultural destination</p>
         <VintageTitle />
         <p className="cine-tagline text-balance">
-          A House of Culture, Sound, Art and Transformation
+          A Destination for Culture, Sound, Art and Transformation
         </p>
         <div className="cine-actions">
           <Link className="cine-btn cine-btn-primary" href="/experience">

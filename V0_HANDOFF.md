@@ -21,7 +21,7 @@ Preserve:
 - existing route paths
 - current client-facing scope and pricing structure
 - separation between client progress and internal production dashboard
-- dark cinematic art-house direction
+- dark cinematic cultural-destination direction
 - VINTAGE × NLE naming
 - IPXS creative-direction attribution
 
@@ -29,6 +29,11 @@ Preserve:
 Use clean, traditional punctuation throughout all visible copy, metadata, accessibility text, and hidden interface text. Do not use em dashes.
 
 Do not replace the project with a generic restaurant template, luxury gold theme, conventional hospitality website, or standard card-grid landing page.
+
+## Real estate and positioning
+The real estate goal is to secure an approximately 5,000-square-foot commercial location that can support the full experience. Vintage House is the name and creative concept. It is not a literal house or residential property. Every room, threshold, material, sound cue and hosted ritual will be designed specifically for the Vintage House world.
+
+Site selection, zoning confirmation, code review, permitting and property acquisition require qualified local professionals. The creative and experience scope defines the site criteria and tests each candidate location against the concept.
 
 ## Current commercial structure
 Phase 1: $18,500
@@ -38,16 +43,16 @@ Final payment: $2,775
 Optional accelerated schedule: +$4,000
 
 ## Non-negotiable experience program
-The project is a destination hospitality property: part cultural institution, private members club, immersive art installation, entertainment venue, and legendary creative residence.
+The project is a destination hospitality venue: part cultural institution, private members club, immersive art installation, entertainment venue and legendary creative world.
 
 The following concepts are mandatory and must remain visible in the guest journey, scope, and production system:
-1. The house itself is the attraction.
+1. The location itself is the attraction.
 2. Every room is its own independent world.
 3. Private salons, listening sessions, dinner parties, artist conversations, intimate performances, and invitation-only experiences.
 4. Constant discovery through hidden rooms, unexpected doors, passages, transformations, and surprise reveals.
 5. Music as architecture, not background decoration.
 6. An evolving living gallery with rotating art and installations.
-7. High-end artist residence energy rather than a conventional restaurant.
+7. The intimacy and collected character of a legendary creative residence, translated into a commercial venue.
 8. Hospitality integrated with entertainment, performance, storytelling, projection, sound, and ritual.
 9. Every room intentionally triggers a distinct emotion.
 10. Photographability is a byproduct of extraordinary design, never the primary design goal.
