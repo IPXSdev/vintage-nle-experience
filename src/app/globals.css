@@ -73,9 +73,12 @@ main > .section:first-child,main > .xp-wrap:first-child,.below-nav{padding-top:c
   animation:flareA 18s ease-in-out infinite alternate;transform:translate3d(calc(var(--pxf,0) * 46px),calc(var(--pyf,0) * 34px),0)}
 .cine-flare-b{bottom:6%;right:8%;width:420px;height:420px;background:radial-gradient(circle,rgba(201,138,58,.2),transparent 66%);
   animation:flareB 22s ease-in-out infinite alternate;transform:translate3d(calc(var(--pxf,0) * -40px),calc(var(--pyf,0) * -30px),0)}
-/* Disco ball lives in the content flow so the composition is deterministic. */
-.cine-disco-wrap{position:relative;width:210px;aspect-ratio:719/543;margin:0 auto;
-  transform:translate3d(calc(var(--px,0) * 34px),calc(var(--py,0) * 22px),0)}
+/* Disco ball. Default here is the fixed art-directed spot used on touch /
+   no-JS / reduced-motion (absolute, centered above the wordmark). On fine
+   pointers the Hero lifts it out and drives translate3d across the hero. */
+.cine-disco-wrap{position:absolute;z-index:1;width:210px;aspect-ratio:719/543;
+  left:50%;top:calc(var(--nav-h) + 6px);transform:translateX(-50%);
+  pointer-events:none;will-change:transform}
 .disco{position:relative;width:100%;height:100%}
 .disco-glow{position:absolute;inset:-34%;background:radial-gradient(circle,rgba(255,238,190,.24),transparent 60%);filter:blur(30px)}
 .disco-spin{position:absolute;inset:0;animation:discoSpin 40s linear infinite}
@@ -142,7 +145,7 @@ main > .section:first-child,main > .xp-wrap:first-child,.below-nav{padding-top:c
   .vnav-drawer a.is-active{color:var(--text)}
   /* Mobile hero is art-directed independently, not a shrunk desktop layout. */
   .cine-hero{padding:calc(var(--nav-h) + 24px) 18px 72px;min-height:100svh;justify-content:center}
-  .cine-disco-wrap{width:150px;margin:0 auto 8px;opacity:.9;transform:none}
+  .cine-disco-wrap{width:150px;top:calc(var(--nav-h) + 4px);opacity:.9}
   .cine-eyebrow{font-size:11px;letter-spacing:.28em;margin-bottom:14px}
   .vintage-title{width:min(86vw,440px);margin:8px auto 0}
   .vintage-title-inner{transform:none}

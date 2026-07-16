@@ -17,7 +17,7 @@ export function DiscoBall() {
           src="/experience/system/disco-ball.png"
           alt=""
           fill
-          sizes="(max-width: 800px) 132px, 184px"
+          sizes="(max-width: 800px) 150px, 210px"
           style={{ objectFit: "contain" }}
         />
       </div>
