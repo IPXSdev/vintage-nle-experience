@@ -6,7 +6,7 @@ const doctrine = [
   {
     k: "I",
     title: "The location is the attraction",
-    body: "Not a themed restaurant or a conventional club, but a commercial destination people travel to enter, with its own memory, myths and gravity.",
+    body: "An approximately 5,000-square-foot commercial location, fully transformed into a destination with its own memory, myths and gravity.",
   },
   {
     k: "II",
@@ -40,23 +40,39 @@ export default function Home() {
     <main>
       <Hero />
 
-      <section className="manifesto">
-        <div className="shell">
-          <p className="sec-eyebrow">The creative doctrine</p>
-          <h2 className="manifesto-h text-balance">
-            A 5,000-square-foot destination where culture, sound, art and transformation become the
-            performance.
-          </h2>
-          <p className="manifesto-p text-pretty">
-            Vintage House is the name of the concept, not a residential building. The goal is to secure
-            an approximately 5,000-square-foot commercial location and transform it completely for this
-            world. The result will feel cinematic, tactile, rebellious and deeply collected, with velvet
-            and crystal, smoke and mirrored light, art on every wall and a secret behind more than one door.
-          </p>
+      <section className="manifesto" id="doctrine">
+        <div className="shell manifesto-grid">
+          <div className="manifesto-heading">
+            <p className="sec-eyebrow">The creative doctrine</p>
+            <h2 className="manifesto-h text-balance">
+              A 5,000-square-foot cultural destination, transformed entirely for the Vintage House experience.
+            </h2>
+          </div>
+          <div className="manifesto-detail">
+            <p className="manifesto-p text-pretty">
+              Vintage House is the name of the concept and the world guests enter, not a literal residence.
+              The goal is to secure an approximately 5,000-square-foot commercial location and design every
+              room, threshold and sensory detail specifically for the experience.
+            </p>
+            <dl className="manifesto-facts">
+              <div>
+                <dt>Target footprint</dt>
+                <dd>Approximately 5,000 square feet</dd>
+              </div>
+              <div>
+                <dt>Real estate</dt>
+                <dd>Commercial location</dd>
+              </div>
+              <div>
+                <dt>Design approach</dt>
+                <dd>Fully transformed for Vintage House</dd>
+              </div>
+            </dl>
+          </div>
         </div>
       </section>
 
-      <section className="doctrine">
+      <section className="doctrine" aria-label="Vintage House creative principles">
         <div className="shell">
           <div className="doctrine-grid">
             {doctrine.map((d) => (

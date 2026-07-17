@@ -38,7 +38,7 @@ const ROOMS: Room[] = [
     alt: "The 90's Room at VINTAGE, a burgundy music-history lounge with stacked vintage televisions, gold records, framed artist portraits and a plastic-wrapped leather sofa.",
     eyebrow: "The memory",
     title: "The 90's Room",
-    body: "A shrine to a golden era of sound and style, with walls of gold records and portraits, a wall of glowing tube screens, and the plastic-wrapped sofa that made a living room a sanctuary. Culture, remembered exactly as it felt.",
+    body: "A shrine to a golden era of sound and style, with walls of gold records and portraits, a wall of glowing tube screens and a plastic-wrapped sofa that turns nostalgia into sanctuary. Culture, remembered exactly as it felt.",
     variant: "left",
     focus: "center",
   },
@@ -64,12 +64,24 @@ const ROOMS: Room[] = [
 
 export function RoomsGallery() {
   return (
-    <section className="rooms" aria-label="The rooms of VINTAGE">
+    <section className="rooms" id="rooms" aria-label="The rooms of VINTAGE">
       <div className="shell">
-        <p className="sec-eyebrow">Every room is its own world</p>
-        <h2 className="rooms-h text-balance">
-          A destination of distinct rooms, each a world with its own light, sound and ritual.
-        </h2>
+        <div className="rooms-intro">
+          <div>
+            <p className="sec-eyebrow">Every room is its own world</p>
+            <h2 className="rooms-h text-balance">
+              One commercial location, composed as a sequence of distinct worlds.
+            </h2>
+          </div>
+          <div className="rooms-intro-copy">
+            <p className="text-pretty">
+              Every room has its own light, sound and ritual, while every detail belongs to one coherent
+              Vintage House experience. The location becomes a cinematic journey through culture,
+              hospitality and discovery.
+            </p>
+            <span>One location. Many worlds.</span>
+          </div>
+        </div>
 
         <div className="rooms-flow">
           {ROOMS.map((room, i) => (

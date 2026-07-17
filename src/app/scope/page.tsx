@@ -22,7 +22,8 @@ export default function ScopePage() {
           <p className="scope-hero-p text-pretty">
             The work moves in deliberate phases, from defining the commercial location criteria and
             testing candidate sites through rooms, engineering and opening. Each phase has its own purpose,
-            deliverables and approval gate. Expand any phase to read its full remit.
+            deliverables and approval gate. Tap into any phase to read its full remit and move through the
+            engagement in sequence.
           </p>
           <div className="scope-meta">
             <span>
@@ -38,6 +39,7 @@ export default function ScopePage() {
             src="/images/vintage-bodega.webp"
             alt="The Bodega at VINTAGE, a warm, golden corner shop with an ornate gilded wood counter, a clerk in shirt and tie, red-shaded lamps and shelves of bottles and collectibles under lamplight."
             fill
+            priority
             sizes="(max-width: 900px) 100vw, 1200px"
             style={{ objectFit: "cover", objectPosition: "center" }}
           />
