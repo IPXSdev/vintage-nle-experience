@@ -223,8 +223,8 @@ export function CinematicExperience() {
       {!started && (
         <div className="cx-entry">
           <div className="cx-entry-in">
-            <p className="cx-entry-brand">VINTAGE</p>
-            <p className="cx-entry-sub">A Cinematic Experience</p>
+            <p className="cx-entry-sub">An Immersive Cultural Destination</p>
+            <VintageTitle />
             <button type="button" className="cx-enter-btn" onClick={enter}>
               Enter With Sound
             </button>
