@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from "react"
 import { useRouter } from "next/navigation"
+import { VintageTitle } from "@/components/VintageTitle"
 
 /**
  * The Experience page IS the film. One master asset (shared with the muted
@@ -336,7 +337,8 @@ export function CinematicExperience() {
       {ended && (
         <div className="cx-end">
           <div className="cx-end-in">
-            <p className="cx-entry-brand">VINTAGE</p>
+            <p className="cx-entry-sub">An Immersive Cultural Destination</p>
+            <VintageTitle />
             <div className="cx-end-actions">
               <button type="button" className="cx-enter-btn" onClick={watchAgain}>
                 Watch Again
