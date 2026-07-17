@@ -100,20 +100,25 @@ export function Nav() {
           onClick={() => setMenuOpen((v) => !v)}
           style={{
             width: "auto",
-            minWidth: 108,
-            height: 48,
-            padding: "0 17px",
-            gap: 12,
+            minWidth: 94,
+            height: 42,
+            padding: "0 14px",
+            gap: 10,
             borderRadius: 9999,
-            borderColor: "rgba(244, 240, 232, 0.22)",
-            background: "rgba(12, 12, 10, 0.58)",
-            backdropFilter: "blur(12px)",
-            WebkitBackdropFilter: "blur(12px)",
+            borderColor: "rgba(255, 255, 255, 0.26)",
+            background: "linear-gradient(145deg, rgba(255,255,255,0.12), rgba(12,12,10,0.18))",
+            backdropFilter: "blur(18px) saturate(145%)",
+            WebkitBackdropFilter: "blur(18px) saturate(145%)",
+            boxShadow: "inset 0 1px 0 rgba(255,255,255,0.12), 0 8px 24px rgba(0,0,0,0.18)",
             whiteSpace: "nowrap",
             flexShrink: 0,
           }}
         >
-          <span className={`vnav-burger${menuOpen ? " is-open" : ""}`} aria-hidden="true">
+          <span
+            className={`vnav-burger${menuOpen ? " is-open" : ""}`}
+            aria-hidden="true"
+            style={{ width: 18, transform: "scaleY(.92)" }}
+          >
             <i />
             <i />
             <i />
@@ -122,11 +127,11 @@ export function Nav() {
             aria-hidden="true"
             style={{
               fontFamily: "var(--font-body)",
-              fontSize: 15,
+              fontSize: 14,
               fontWeight: 500,
               lineHeight: 1,
-              letterSpacing: ".02em",
-              color: "var(--text)",
+              letterSpacing: ".01em",
+              color: "rgba(255,255,255,.94)",
               whiteSpace: "nowrap",
             }}
           >
