@@ -94,15 +94,43 @@ export function Nav() {
         <button
           type="button"
           className="vnav-toggle"
+          aria-label={menuOpen ? "Close menu" : "Open menu"}
           aria-expanded={menuOpen}
           aria-controls="vnav-drawer"
           onClick={() => setMenuOpen((v) => !v)}
+          style={{
+            width: "auto",
+            minWidth: 108,
+            height: 48,
+            padding: "0 17px",
+            gap: 12,
+            borderRadius: 9999,
+            borderColor: "rgba(244, 240, 232, 0.22)",
+            background: "rgba(12, 12, 10, 0.58)",
+            backdropFilter: "blur(12px)",
+            WebkitBackdropFilter: "blur(12px)",
+            whiteSpace: "nowrap",
+            flexShrink: 0,
+          }}
         >
-          <span className="sr-only">{menuOpen ? "Close menu" : "Open menu"}</span>
           <span className={`vnav-burger${menuOpen ? " is-open" : ""}`} aria-hidden="true">
             <i />
             <i />
             <i />
+          </span>
+          <span
+            aria-hidden="true"
+            style={{
+              fontFamily: "var(--font-body)",
+              fontSize: 15,
+              fontWeight: 500,
+              lineHeight: 1,
+              letterSpacing: ".02em",
+              color: "var(--text)",
+              whiteSpace: "nowrap",
+            }}
+          >
+            {menuOpen ? "Close" : "Menu"}
           </span>
         </button>
       </div>
